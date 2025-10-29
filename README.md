@@ -1,1 +1,1 @@
-# This is for Learning purpose
+This repository serves as a personal learning space where I explore and practice new concepts, tools, and technologies.
