@@ -1,1 +1,1 @@
-# This is for Self Learning Purpose
+# This is for Learning purpose
