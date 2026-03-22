@@ -1,0 +1,84 @@
+/* Set margin and background color for the entire body */
+body {
+  margin: 0;
+  background: #f2f4ff;
+}
+
+/* Style for the navigation bar container */
+.navBar-container {
+  background: #779ecb;
+  padding: 10px;
+}
+
+/* Style for navigation bar links inside the container */
+.navBar-container a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Style for the navigation bar text */
+.navBar-container .nav_bar {
+  font-size: 22px;
+  font-weight: bold;
+  display: inline;
+  padding: 10px;
+}
+
+/* Style for an element with ID 'Topff' */
+#Topff {
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+/* Style for list items (li) links */
+li a {
+  font-size: 12px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Style for list item links when hovered */
+li a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Style for elements with class 'section' */
+.section {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Style for images inside elements with class 'section' */
+.section img {
+  width: 50%;
+  border-radius: 5px;
+}
+
+/* Style for an element with ID 'Top' */
+#Top {
+  padding-left: 5px;
+  font-size: 10px;
+  color: #779bce;
+  text-decoration: underline;
+}
+
+/* Style for the footer */
+footer {
+  font-size: 10px;
+  background: #000000;
+  color: #f2f4ff;
+  text-align: right;
+  margin: 0;
+  background: black;
+  padding-right: 8px;
+}
+
+/* Style for the copyright notice inside the footer */
+.copywrite {
+  padding-left: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  color: #ffffff;
+}

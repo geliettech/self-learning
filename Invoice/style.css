@@ -1,0 +1,48 @@
+/* Set global styles for the entire page body */
+body {
+  margin: 0; /* Remove default margin */
+  background: #f2f4ff; /* Set background color */
+  height: 100vh; /* Set height to 100% of the viewport height */
+  max-width: 100%; /* Set maximum width to 100% of the viewport width */
+  display: flex; /* Use flexbox for layout */
+  place-items: center; /* Center content both horizontally and vertically */
+}
+
+/* Style for tables in the page */
+table {
+  margin-top: 5px; /* Add top margin of 5 pixels */
+  margin-bottom: 5px; /* Add bottom margin of 5 pixels */
+  margin-left: auto; /* Align table to the right */
+  margin-right: auto; /* Align table to the left */
+  color: black; /* Set text color to black */
+  font: 14px normal arial; /* Set font properties */
+}
+
+/* Apply border styles to tables, table cells, and table rows */
+table,
+td,
+tr {
+  border: 0.5px solid rgb(0, 0, 0); /* Set border properties (color, width, style) */
+  border-collapse: collapse; /* Collapse borders to avoid spacing between cells */
+}
+
+/* Style for specific table cells with IDs */
+#invoicedate {
+  background: lightblue; /* Set background color to light blue */
+}
+
+#third-row {
+  background: lightblue; /* Set background color to light blue */
+}
+
+#subtotal {
+  background: lightblue; /* Set background color to light blue */
+}
+
+#tax {
+  background: lightblue; /* Set background color to light blue */
+}
+
+#grandtotal {
+  background: lightblue; /* Set background color to light blue */
+}

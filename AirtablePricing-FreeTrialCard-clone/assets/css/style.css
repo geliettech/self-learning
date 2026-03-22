@@ -1,0 +1,132 @@
+/* Universal reset for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Styling for the body */
+body {
+  font-family: "Inter Display", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+/* Styling for the main container */
+main {
+  border: 1px solid rgb(196, 199, 205);
+  border-radius: 14px;
+  padding: 1rem 1.5rem;
+  color: #333333;
+  width: 90%;
+  max-width: 300px;
+}
+/* Styling for the Team heading */
+.Team-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 8px;
+}
+/* Styling for the first span in Team heading */
+.Team-heading span:nth-child(1) {
+  font-size: 28px;
+  font-weight: 500;
+}
+/* Styling for the second span in Team heading */
+.Team-heading span:nth-child(2) {
+  font-size: 11px;
+  font-weight: 700;
+  background-color: #cff5d1;
+  border-radius: 9999px;
+  margin-left: 1rem;
+  padding: 0.1rem 0.5rem;
+  letter-spacing: -0.01rem;
+  margin-top: 8px;
+}
+/* Styling for the paragraph in heading section */
+.heading-section p {
+  line-height: 20px;
+  padding-bottom: 1rem;
+  font-size: 14px;
+  letter-spacing: -0.01rem;
+  font-weight: 400;
+}
+/* Styling for the annually pricing information section */
+.pricing-information .annually {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* Styling for the first div in annually pricing information section */
+.pricing-information .annually div:nth-child(1) {
+  font-size: 4rem;
+  margin-right: 1rem;
+}
+/* Styling for the second div in annually pricing information section */
+.pricing-information .annually div:nth-child(2) {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 18px;
+  padding-bottom: 8px;
+}
+/* Styling for the monthly pricing information section */
+.pricing-information .monthly {
+  font-size: 1rem;
+  padding-bottom: 16px;
+}
+/* Styling for the first span in monthly pricing information section */
+.pricing-information .monthly span:nth-child(1) {
+  font-weight: 500;
+}
+/* Styling for the second span in monthly pricing information section */
+.pricing-information .monthly span:nth-child(2) {
+  font-weight: 400;
+}
+/* Styling for the Button to sign up for the service */
+.btn-wrapper {
+  background-color: #166ee1;
+  width: 100%;
+  border-radius: 9999px;
+  text-align: center;
+  padding: 1rem;
+  border: none;
+  margin: 0 0 16px;
+}
+.btn-wrapper a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* Styling for listing features Section */
+.features {
+  margin-top: 24px;
+}
+.features h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  padding: 0 0 12px 0;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 14px;
+  padding-bottom: 0.25rem;
+  letter-spacing: -0.01rem;
+  font-weight: 400;
+}
+/* Styling for the check icon in listing features Section */
+.feature-item img {
+  width: 18px;
+  height: 18px;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-right: 4px;
+}
