@@ -1,0 +1,141 @@
+/* styling for form-wrapper */
+.form-wrapper {
+  max-width: 642px; /* Maximum width of the form-wrapper */
+  width: 90%; /* Responsive width */
+  color: #000000;
+  background-color: #fefefe;
+  padding: 28px;
+  border-radius: 8px;
+}
+/* styling for h2 within form-wrapper */
+.form-wrapper h2 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 100%;
+  color: #000000;
+}
+/* Submit status styling */
+.form-wrapper .submit-status {
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/* Error status text color */
+.form-wrapper .error-status {
+  color: #ff0000;
+}
+
+/* Success status text color */
+.form-wrapper .success {
+  color: #1a7d69;
+}
+
+/* Form styling */
+.form-wrapper form {
+  width: 100%;
+}
+
+/* Form group and name input wrapper styles */
+form .form-group {
+  margin-bottom: 0.6rem;
+}
+form .form-group,
+.name-input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+/* Name group styles for flex row layout and wrapping */
+form .Name-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow wrapping for responsive layout */
+}
+
+/* Name input wrapper styles for flexible width */
+form .form-group .name-input-wrapper {
+  flex: 1;
+}
+
+/* Margin left for adjacent name input wrappers */
+.name-input-wrapper + .name-input-wrapper {
+  margin-left: 12px;
+}
+form .form-group label {
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding-bottom: 0.1rem;
+}
+form .form-group label sup {
+  color: #1a7d69;
+  margin-left: 4px;
+}
+form .form-group input,
+form .form-group textarea,
+form .btn-wrapper .btn {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 6px;
+  border-radius: 6px;
+  outline: none;
+}
+form .form-group #subject {
+  border: 1.8px solid #000;
+}
+form .form-group .error-input-border {
+  border: 1.8px solid #ff0000;
+}
+form .form-group .input-border {
+  border: 1.8px solid #000;
+}
+.form-group input:hover,
+.form-group input:active .form-group textarea:hover,
+.form-group textarea:active {
+  border: 1.8px solid #1a7d69;
+}
+form .form-group .error {
+  color: #ff0000;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+/* Button wrapper styles for flexible width */
+form .form-group .btn-wrapper {
+  flex: 1;
+  margin-top: 2rem;
+}
+
+/* Button styles for full width */
+
+.btn-wrapper .btn {
+  font-family: "Inter", sans-serif;
+  border: none;
+  background-color: #1a7d69;
+  color: #fefefe;
+  width: 100%;
+  cursor: pointer;
+}
+.btn-wrapper .btn:hover {
+  background-color: #0f4a3e;
+}
+/* Loading icon animation */
+.loading-icon {
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframes for spin animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media query for responsiveness on small screens */
+@media (max-width: 425px) {
+  .name-input-wrapper + .name-input-wrapper {
+    margin-left: 0; /* Remove left margin for narrow screens */
+    margin-top: 0.6rem;
+  }
+}

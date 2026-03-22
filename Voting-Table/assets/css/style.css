@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-control {
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+.table-control table {
+  border-collapse: collapse;
+  max-width: 100%;
+  width: 100%;
+}
+
+table td {
+  border: 2px solid #dddddd;
+}
+
+table thead {
+  text-align: center;
+  background-color: rgb(2, 2, 50);
+  color: white;
+  padding: 2px 0;
+}
+
+table thead th {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 2px 0;
+}
+
+table tbody {
+  color: rgb(2, 2, 50);
+}
+
+tbody tr td {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+tbody tr td:nth-child(6) {
+  text-align: right;
+}

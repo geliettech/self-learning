@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact_Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--This is for hCaptcha-->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Contact Us</h1>
+      <form method="POST" id="form">
+        <!-- Add your Access Key -->
+        <input
+          type="hidden"
+          name="access_key"
+          value="8ec65f49-24b9-433f-8ead-a63fef65ef01"
+        />
+
+        <!-- customize the Form Name of the email you receive  -->
+        <input type="hidden" id="from_name" name="from_name" value="" />
+        <!-- subject of the email -->
+        <input
+          type="hidden"
+          name="subject"
+          value="New Submission from Contact Form with HTML & JavaScript"
+        />
+        <!-- Prevent bots and spammers using your forms to send emails. -->
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+        <!-- `replyto` email will be the given value. -->
+        <input type="hidden" name="replyto" id="replyto" value="" />
+
+        <!-- Custom Form Data -->
+        <div class="input-group">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Your Name"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Your Email"
+          />
+        </div>
+
+        <div class="input-group">
+          <textarea
+            name="message"
+            rows="5"
+            required
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <!-- hCaptcha -->
+        <div
+          class="h-captcha"
+          data-captcha="true"
+          data-lang="en"
+          data-theme="light"
+          data-size="normal"
+          aria-required="true"
+        ></div>
+        <!-- submit button -->
+        <button id="btn" type="submit">Submit</button>
+
+        <div id="result"></div>
+      </form>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
