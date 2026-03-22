@@ -1,7 +1,18 @@
+import { useState } from "react"
 import { useAddTransactions } from "../../hooks/useAddTransactions"
 
 const Dashboard = () => {
   const { addTransactions } = useAddTransactions()
+
+  const [description, setDescription] = useState("")
+  const [transactionAmount, setTransactionAmount] = useState([])
+  const [transactionType, setTransactionType] = useState("expense")
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    addTransactions({ description, transactionAmount, transactionType })
+  }
+
   return (
     <>
       <div className="expense tracker">
@@ -21,12 +32,12 @@ const Dashboard = () => {
               <p>$0.00</p>
             </div>
           </div>
-          <form action="" className="add-transaction">
-            <input type="text" placeholder="Description" required />
-            <input type="number" placeholder="Amount" required />
-            <input type="radio" id="expense" value="expense" placeholder="Amount" required />
-            <label htmlFor="expense">Expenses</label>
-            <input type="radio" id="income" value="income" placeholder="Amount" required />
+          <form action="" className="add-transaction" onSubmit={handleSubmit}>
+            <input type="text" placeholder="Description" required onChange={(e) => setDescription(e.target.value)} />
+            <input type="number" placeholder="Amount" required onChange={(e) => setTransactionAmount(e.target.value)} />
+            <input type="radio" id="expense" value="expense" placeholder="Amount" checked={transactionType === "expense"} onChange={(e) => setTransactionType(e.target.value)} />
+            <label htmlFor="expense">Expense</label>
+            <input type="radio" id="income" value="income" placeholder="Amount" checked={transactionType === "income"} onChange={(e) => setTransactionType(e.target.value)} />
             <label htmlFor="income">Income</label>
             <button type="submit">Add Transaction</button>
           </form>
