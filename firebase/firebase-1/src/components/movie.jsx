@@ -25,7 +25,6 @@ function Movie() {
         id: doc.id,
       }));
       setMovieList(filteredData);
-      console.log(filteredData);
     } catch (err) {
       console.error(err)
     }
@@ -33,7 +32,7 @@ function Movie() {
 
   useEffect(() => {
     getMovieList()
-  }, [])
+  })
 
 
   const onSubmitMovie = async () => {
