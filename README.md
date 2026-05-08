@@ -1,1 +1,1 @@
-This repository is dedicated to my continuous learning and improvement as a developer. Here, I explore new concepts, experiment with different tools and technologies, and document my progress along the way.
+This repository is dedicated to my continuous learning and improvement in tech space.
