@@ -1,1 +1,1 @@
-This repository is dedicated to my continuous learning and improvement in tech space.
+Documentation of continuous learning and improvement in the tech space.
