@@ -61,10 +61,10 @@ export class AppwriteService {
     return false;
   }
   
-
+// get a specific user
   async getCurrentUser() {
     try {
-        account.get()
+        return account.get()
     } catch (error) {
         console.log("getCurrentUser error", error);
     }
@@ -72,5 +72,17 @@ export class AppwriteService {
     return null
   }
 
-  async logout() {}
+  // log out current user
+  async logout() {
+    try {
+      return await account.deleteSession("current")
+    } catch (error) {
+      console.log("logout error: " + error)
+    }
+  }
 }
+
+const appwriteService = new AppwriteService();
+
+
+export default appwriteService;
